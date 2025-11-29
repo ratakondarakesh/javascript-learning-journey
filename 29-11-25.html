@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="product-info">
+        <div>
+            <img src="" alt="product 1" id="image-url1">
+        </div>
+        <div>
+            <h2 id="product-name1"></h2>
+            <ul>
+                <li id="specification1"></li>
+                <li id="specification2"></li>
+                <li id="specification3"></li>
+                <li id="specification4"></li>
+                <li id="specification5"></li>
+                <li id="specification6"></li>
+            </ul>
+        </div>
+        <div>
+            <h3 id="price"></h3>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+var mobiles = [
+  {
+    id: 1,
+    name: "Samsung Galaxy F36 5G (Red, 128 GB)",
+    imageUrl: "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/y/4/3/-original-imahgynngheku3mz.jpeg?q=70",
+    ratingsAndReviews: "7,641 Ratings & 445 Reviews",
+    price: "Rs 16,499",
+    discount: 37,
+    overAllRating: 4.4,
+    specifications: [
+      "6 GB RAM | 128 GB ROM | Expandable Upto 2 TB",
+      "17.02 cm (6.7 inch) Full HD+ Display",
+      "50MP + 8MP + 2MP | 13MP Front Camera",
+      "5000 mAh Battery",
+      "Samsung Exynos 1380 Processor",
+      "1 Year Manufacturer Warranty for Device and 6 Months for In-Box Accessories"
+    ]
+  }
+];
+
+// ✅ Use mobiles (not products)
+document.getElementById("product-name1").innerHTML = mobiles[0].name;
+
+document.getElementById("image-url1").src = mobiles[0].imageUrl;
+
+document.getElementById("price").innerHTML = mobiles[0].price;
+
+// ✅ specifications
+document.getElementById("specification1").innerHTML = mobiles[0].specifications[0];
+document.getElementById("specification2").innerHTML = mobiles[0].specifications[1];
+document.getElementById("specification3").innerHTML = mobiles[0].specifications[2];
+document.getElementById("specification4").innerHTML = mobiles[0].specifications[3];
+document.getElementById("specification5").innerHTML = mobiles[0].specifications[4];
+document.getElementById("specification6").innerHTML = mobiles[0].specifications[5];
+</script>
+
+    
+
+
+</body>
+</html>
